@@ -7,8 +7,6 @@ pygmentsstyle = "vs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-googleAnalytics = "UA-123-45"
-
 [params]
 	subtitle = "Clean and minimal personal [blog theme for Hugo](https://github.com/vividvilla/ezhil)"
 	# Number of posts to show in recent posts list.

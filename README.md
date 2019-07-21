@@ -11,7 +11,7 @@ Clean and minimal personal blog and portfolio theme for Hugo.
 * Responsive
 * Supports tags
 * Social media links
-* Google Analytics integration
+* Google Analytics integration [REMOVED BY FORK]
 * Syntax highlighting
 * Twitter cards and opengraph tags support
 * Disqus comments [REMOVED BY FORK]
@@ -39,8 +39,6 @@ pygmentsstyle = "vs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-# Your Google analytics code.
-googleAnalytics = "UA-123-45"
 
 [params]
 	# Blog subtitle which appears below blog title. Supports markdown.
