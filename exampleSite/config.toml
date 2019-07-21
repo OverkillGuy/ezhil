@@ -8,7 +8,6 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 googleAnalytics = "UA-123-45"
-disqusShortname = "localhost"
 
 [params]
 	subtitle = "Clean and minimal personal [blog theme for Hugo](https://github.com/vividvilla/ezhil)"
@@ -16,7 +15,6 @@ disqusShortname = "localhost"
 	recentPostsCount = 10
 	# Content types which are excluded from recent posts and archive page.
 	excludedTypes = ["page"]
-	disableDisqusTypes = ["page"]
 	featherIconsCDN = true
 
 [[menu.main]]

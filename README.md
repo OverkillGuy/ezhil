@@ -14,7 +14,7 @@ Clean and minimal personal blog and portfolio theme for Hugo.
 * Google Analytics integration
 * Syntax highlighting
 * Twitter cards and opengraph tags support
-* Disqus comments
+* Disqus comments [REMOVED BY FORK]
 * Hugo RSS feeds
 
 # Installation
@@ -41,8 +41,6 @@ pygmentscodefencesguesssyntax = true
 
 # Your Google analytics code.
 googleAnalytics = "UA-123-45"
-# Your Disqus sortname.
-disqusShortname = "localhost"
 
 [params]
 	# Blog subtitle which appears below blog title. Supports markdown.
@@ -51,8 +49,6 @@ disqusShortname = "localhost"
 	recentPostsCount = 10
 	# Content types which are excluded from recent posts and archive page (Optional). Defaults to ["page"]
 	excludedTypes = ["page"]
-	# Content types which are excludes Disqus comments (Optional). Defaults to ["page"]
-	disableDisqusTypes = ["page"]
 	# If social media links are enabled then enable this to fetch icons from CDN instead of hosted on your site.
 	featherIconsCDN = true
 
@@ -95,7 +91,7 @@ url = "https://twitter.com/gohugoio"
 ```
 
 # Content type
-You can specify content type with field `type` in your content. For example static pages can be set as type `page` which are excluded from recent posts and all posts page. You can use site params `excludedTypes` and `disableDisqusTypes` to control which page types are excluded from recent posts and Disqus comments respectively.
+You can specify content type with field `type` in your content. For example static pages can be set as type `page` which are excluded from recent posts and all posts page.
 
 ```
 ---
@@ -107,20 +103,6 @@ type: "page"
 This is some static page where you can write about yourself.
 ```
 
-# Disable Disqus
-You can disable Disqus from contents selectively or for all contents with certain content type. Use content field `disqus` to disable Disqus from certain contents.
-
-```
----
-title: "Content without comments"
-date: 2019-04-19T21:37:58+05:30
-disqus: false
----
-
-This is a content without Disqus comments.
-```
-
-You can also disable Disqus for certain content types by using site param `disableDisqusTypes`. You can check config section above for example.
 
 # Credits
 * [Feather Icons](https://feathericons.com/)
