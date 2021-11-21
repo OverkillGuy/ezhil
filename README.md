@@ -2,6 +2,9 @@
 
 Clean and minimal personal blog and portfolio theme for Hugo.
 
+Forked by Jb Doyon (@OverkillGuy) to disable "intrusive" monitoring
+(Google Analytics)
+
 ## Demo
 
 [View demo](https://ezhil-hugo.netlify.com/)
@@ -16,7 +19,7 @@ Clean and minimal personal blog and portfolio theme for Hugo.
 * Responsive
 * Supports tags
 * Social media links
-* Google Analytics integration
+* Google Analytics integration [DISABLED BY FORK]
 * Syntax highlighting
 * Twitter cards and opengraph tags support
 * Disqus comments
@@ -49,8 +52,6 @@ pygmentsstyle = "solarized-dark"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-# Your Google analytics code.
-googleAnalytics = "UA-123-45"
 # Your Disqus sortname.
 disqusShortname = "localhost"
 
