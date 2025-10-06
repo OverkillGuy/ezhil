@@ -22,7 +22,7 @@ Forked by Jb Doyon (@OverkillGuy) to disable "intrusive" monitoring
 * Google Analytics integration [DISABLED BY FORK]
 * Syntax highlighting
 * Twitter cards and opengraph tags support
-* Disqus comments
+* Disqus comments [REMOVED BY FORK]
 * Hugo RSS feeds
 * Custom CSS/JS
 
@@ -32,7 +32,9 @@ From your Hugo site run the following.
 
 ```sh
 cd themes
-git clone https://github.com/vividvilla/ezhil.git
+# Fork url, upstream was:
+# git clone https://github.com/vividvilla/ezhil.git
+git clone https://github.com/OverkillGuy/ezhil.git
 ```
 
 For more information read the [official setup guide](https://gohugo.io/overview/installing/) of Hugo.
@@ -52,9 +54,6 @@ pygmentsstyle = "solarized-dark"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-# Your Disqus sortname.
-disqusShortname = "localhost"
-
 # Number of posts to show in recent posts list (Optional). Defaults to 10.
 paginate = 10
 
@@ -67,9 +66,6 @@ summaryLength = 20
 
     # Content types which are included in home page recent posts list.
     mainSections = ["posts"]
-
-    # Content types which are excludes Disqus comments.
-    disableDisqusTypes = ["page"]
 
     # If social media links are enabled then enable this to fetch icons from CDN instead of hosted on your site.
     featherIconsCDN = true
@@ -145,21 +141,6 @@ type: "page"
 This is some static page where you can write about yourself.
 ```
 
-## Disable Disqus
-
-You can disable Disqus site wide if you don't set `DisqusShortname` param in config. You can also disable Disqus from contents selectively or for all contents with certain content type. Use content field `disqus` to disable Disqus from certain contents.
-
-```md
----
-title: "Content without comments"
-date: 2019-04-19T21:37:58+05:30
-disqus: false
----
-
-This is a content without Disqus comments.
-```
-
-You can also disable Disqus for certain content types by using site param `disableDisqusTypes`. You can check config section above for example.
 
 ## Credits
 
